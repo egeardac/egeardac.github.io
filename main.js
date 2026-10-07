@@ -25,7 +25,7 @@ $("education-list").innerHTML = d.education.map((e) => card(e.degree, e.school, 
 const htbCard = () => `
   <div class="card wide"><div class="row"><h3>Cybersecurity · Hack The Box Academy</h3>
     <span class="meta">${d.htb.stats.map(esc).join(" · ")}</span></div>
-    <div class="tags">${d.htb.modules.map((m) => `<span class="tag ${m.progress === 100 ? "done" : ""}" title="${m.progress}% completed">${esc(m.name)}${m.progress === 100 ? " ✓" : ` · ${m.progress}%`}</span>`).join("")}</div></div>`;
+    <div class="tags">${d.htb.modules.map((m) => `<span class="tag">${esc(m.name)}</span>`).join("")}</div></div>`;
 $("skills-list").innerHTML = htbCard() + d.skills.map((s) => `
   <div class="card"><h3>${esc(s.group)}</h3>
     <div class="tags">${s.items.map((i) => `<span class="tag">${esc(i)}</span>`).join("")}</div></div>`).join("");
