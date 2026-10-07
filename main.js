@@ -14,8 +14,7 @@ img.onload = () => $("avatar").replaceChildren(img);
 img.onerror = () => ($("avatar").textContent = initials);
 img.src = d.photo;
 $("actions").innerHTML = `
-  <a class="btn primary" href="${d.cv}" download>Download CV</a>
-  <a class="btn" href="${d.contact.github}" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn primary" href="${d.contact.github}" target="_blank" rel="noopener">GitHub</a>
   <a class="btn" href="${d.contact.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`;
 
 // Timeline cards
@@ -71,6 +70,15 @@ document.addEventListener("click", (e) => {
 const closeLb = () => ($("lightbox").hidden = true);
 $("lightbox").addEventListener("click", closeLb);
 document.addEventListener("keydown", (e) => e.key === "Escape" && closeLb());
+
+// Hack The Box Academy
+$("htb-stats").innerHTML = [d.htb.profile, ...d.htb.stats].map((s) => `<span class="tag">${esc(s)}</span>`).join("");
+$("htb-list").innerHTML = d.htb.modules.map((m) => `
+  <div class="card module">
+    <div class="row"><h3>${esc(m.name)}</h3><span class="tag ${m.tag === "Offensive" ? "off" : ""}">${esc(m.tag)}</span></div>
+    <div class="bar"><span style="width:${m.progress}%"></span></div>
+    <span class="meta">${m.progress}% completed</span>
+  </div>`).join("");
 
 // Extras
 $("cert-list").innerHTML = d.certifications.map((c) => `<li>${esc(c)}</li>`).join("");
