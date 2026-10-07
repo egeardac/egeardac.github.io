@@ -80,7 +80,7 @@ window.SITE = {
 
   // Hack The Box Academy transcript (07-10-2026)
   htb: {
-    stats: ["Targets compromised: 24", "Ranking: Top 20%"],
+    stats: ["Targets compromised: 106", "Ranking: Top 1%"],
     modules: [
       { name: "Network Enumeration with Nmap", tag: "Offensive", progress: 100 },
       { name: "Getting Started", tag: "Offensive", progress: 100 },
