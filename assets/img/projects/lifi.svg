@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="monospace">
+<rect width="640" height="360" fill="#141d2b"/>
+<g fill="none" stroke="#9fef00" stroke-width="2">
+<rect x="40" y="130" width="150" height="100" rx="8"/><rect x="450" y="130" width="150" height="100" rx="8"/>
+<path d="M190 180 L450 180" stroke-dasharray="10 8"/>
+<path d="M205 150 L235 180 L205 210 M240 150 L270 180 L240 210" stroke-opacity=".5"/>
+<circle cx="420" cy="180" r="14"/><path d="M406 166 L434 194"/>
+</g>
+<g fill="#9fef00" font-size="15" text-anchor="middle">
+<text x="115" y="172">PLC</text><text x="115" y="196">LED TX</text>
+<text x="525" y="172">Photodiode</text><text x="525" y="196">RX → PLC</text>
+<text x="320" y="165">visible light</text></g>
+<text x="320" y="300" fill="#a4b1cd" font-size="20" text-anchor="middle">Li-Fi PLC Transmitter / Receiver</text>
+</svg>

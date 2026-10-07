@@ -59,6 +59,7 @@ window.SITE = {
   ],
 
   skills: [
+    { group: "Cybersecurity", items: ["Nmap", "Network enumeration", "Penetration testing process", "Metasploit", "Footprinting", "Linux", "TCP/IP & OSI", "DNS"] },
     { group: "Simulation & Analysis", items: ["MATLAB", "Simulink", "LTspice", "Proteus", "KiCad"] },
     { group: "Programming", items: ["Python", "C++", "C#", "Java"] },
     { group: "AI & Automation", items: ["AI-assisted workflows", "Prompt engineering", "Data analysis"] },
@@ -71,33 +72,47 @@ window.SITE = {
   // youtube: video ID'si, ör. https://www.youtube.com/watch?v=dQw4w9WgXcQ → "dQw4w9WgXcQ"
   projects: [
     {
-      title: "QAM Modulation & BER Analysis (Sample)",
+      title: "Li-Fi PLC Transmitter & Receiver",
       date: "2026",
-      description: "Simulated 16-QAM and 64-QAM over an AWGN channel and compared bit error rates with theoretical curves.",
-      tags: ["MATLAB", "Simulink", "Communications"],
-      images: ["assets/img/projects/sample-1.svg"],
+      description: "Visible-light communication (Li-Fi) link between PLCs: the transmitter modulates an LED to send PLC data, and a photodiode receiver demodulates the light signal and feeds it back to a PLC input. Covers modulation, signal conditioning, and noise handling in an industrial-control context.",
+      tags: ["Li-Fi", "PLC", "Optical Communication", "Signal Processing"],
+      images: ["assets/img/projects/lifi.svg"],
       youtube: "",
       link: ""
     },
     {
-      title: "Sensor Board PCB Design (Sample)",
-      date: "2025",
-      description: "Schematic and two-layer PCB for a microcontroller sensor board; analog front end verified in LTspice.",
-      tags: ["KiCad", "LTspice"],
-      images: ["assets/img/projects/sample-2.svg"],
-      youtube: "",
-      link: ""
-    },
-    {
-      title: "Unity Simulation (Sample)",
+      title: "Unity Simulation",
       date: "2025",
       description: "Interactive Unity simulation with C# scripting to visualize engineering concepts.",
       tags: ["Unity", "C#", "Blender"],
-      images: ["assets/img/projects/sample-3.svg"],
+      images: ["assets/img/projects/unity.webp"],
       youtube: "",
       link: ""
     }
   ],
+
+  // Hack The Box Academy transcript (07-10-2026)
+  htb: {
+    profile: "#2686223",
+    stats: ["Targets compromised: 24", "Ranking: Top 20%"],
+    modules: [
+      { name: "Network Enumeration with Nmap", tag: "Offensive", progress: 100 },
+      { name: "Getting Started", tag: "Offensive", progress: 100 },
+      { name: "Penetration Testing Process", tag: "General", progress: 100 },
+      { name: "Introduction to Networking", tag: "General", progress: 100 },
+      { name: "Learning Process", tag: "General", progress: 100 },
+      { name: "Intro to Academy", tag: "General", progress: 100 },
+      { name: "Network Foundations", tag: "General", progress: 50 },
+      { name: "Linux Fundamentals", tag: "General", progress: 33 },
+      { name: "Introduction to Information Security", tag: "General", progress: 29 },
+      { name: "Using the Metasploit Framework", tag: "Offensive", progress: 27 },
+      { name: "Introduction to Python 3", tag: "General", progress: 21 },
+      { name: "Domain Name System Fundamentals", tag: "General", progress: 17 },
+      { name: "Footprinting", tag: "Offensive", progress: 10 },
+      { name: "Introduction to Penetration Testing", tag: "Offensive", progress: 10 },
+      { name: "Pentest in a Nutshell", tag: "Offensive", progress: 4 }
+    ]
+  },
 
   certifications: [
     "Core MATLAB Skills (Learning Path) – MathWorks, 2026",
