@@ -10,7 +10,7 @@ window.SITE = {
     github: "https://github.com/egeardac"
   },
   summary:
-    "Electrical and Electronics Engineering student at Yasar University specializing in telecommunications, signal processing, and wireless communication systems. I build simulations in MATLAB, Simulink, and Unity, write Python, C++, and C# for automation and data processing, and recently completed a cybersecurity internship.",
+    "Electrical and Electronics Engineering student at Yasar University specializing in telecommunications, signal processing, and wireless communication systems. I build simulations in MATLAB, Simulink, and Unity, write Python, C++, and C# for automation and data processing, and recently completed a cybersecurity internship. I am especially interested in cybersecurity and AI applications, and I take part in bug bounty programs on Bugcrowd and HackerOne, with a focus on AI pentesting.",
 
   education: [
     {
@@ -101,8 +101,8 @@ window.SITE = {
   },
 
   certifications: [
-    "HTB Certified Penetration Testing Specialist (HTB CPTS) – Hack The Box",
-    "Junior Programmer – Unity",
+    "HTB Certified Penetration Testing Specialist (HTB CPTS) – Hack The Box, 2026",
+    "Junior Programmer – Unity, 2026",
     "Core MATLAB Skills (Learning Path) – MathWorks, 2026",
     "Core Signal Processing Techniques in MATLAB – MathWorks, 2026",
     "Simulink Fundamentals – MathWorks, 2026",
