@@ -7,12 +7,6 @@ const list = (items) => items.length ? `<ul>${items.map((i) => `<li>${esc(i)}</l
 $("name").textContent = d.name;
 $("title").textContent = d.title;
 $("summary").textContent = d.summary;
-const initials = d.name.split(" ").map((w) => w[0]).join("").slice(0, 3);
-const img = new Image();
-img.alt = d.name;
-img.onload = () => $("avatar").replaceChildren(img);
-img.onerror = () => ($("avatar").textContent = initials);
-img.src = d.photo;
 $("actions").innerHTML = `
   <a class="btn primary" href="${d.contact.github}" target="_blank" rel="noopener">GitHub</a>
   <a class="btn" href="${d.contact.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`;
@@ -27,8 +21,12 @@ const card = (title, sub, date, loc, bullets) => `
 $("experience-list").innerHTML = d.experience.map((e) => card(e.role, e.org, e.date, e.location, e.bullets)).join("");
 $("education-list").innerHTML = d.education.map((e) => card(e.degree, e.school, e.date, e.location, e.bullets)).join("");
 
-// Skills
-$("skills-list").innerHTML = d.skills.map((s) => `
+// Skills (Cybersecurity card includes Hack The Box Academy progress)
+const htbCard = () => `
+  <div class="card wide"><div class="row"><h3>Cybersecurity · Hack The Box Academy</h3>
+    <span class="meta">${d.htb.stats.map(esc).join(" · ")}</span></div>
+    <div class="tags">${d.htb.modules.map((m) => `<span class="tag ${m.progress === 100 ? "done" : ""}" title="${m.progress}% completed">${esc(m.name)}${m.progress === 100 ? " ✓" : ` · ${m.progress}%`}</span>`).join("")}</div></div>`;
+$("skills-list").innerHTML = htbCard() + d.skills.map((s) => `
   <div class="card"><h3>${esc(s.group)}</h3>
     <div class="tags">${s.items.map((i) => `<span class="tag">${esc(i)}</span>`).join("")}</div></div>`).join("");
 
@@ -70,15 +68,6 @@ document.addEventListener("click", (e) => {
 const closeLb = () => ($("lightbox").hidden = true);
 $("lightbox").addEventListener("click", closeLb);
 document.addEventListener("keydown", (e) => e.key === "Escape" && closeLb());
-
-// Hack The Box Academy
-$("htb-stats").innerHTML = [d.htb.profile, ...d.htb.stats].map((s) => `<span class="tag">${esc(s)}</span>`).join("");
-$("htb-list").innerHTML = d.htb.modules.map((m) => `
-  <div class="card module">
-    <div class="row"><h3>${esc(m.name)}</h3><span class="tag ${m.tag === "Offensive" ? "off" : ""}">${esc(m.tag)}</span></div>
-    <div class="bar"><span style="width:${m.progress}%"></span></div>
-    <span class="meta">${m.progress}% completed</span>
-  </div>`).join("");
 
 // Extras
 $("cert-list").innerHTML = d.certifications.map((c) => `<li>${esc(c)}</li>`).join("");

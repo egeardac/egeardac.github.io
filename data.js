@@ -2,7 +2,6 @@
 window.SITE = {
   name: "Ege Arda Çörekci",
   title: "Electrical & Electronics Engineering Student",
-  photo: "assets/img/profile.jpg", // Fotoğrafını bu isimle koy; yoksa baş harfler gösterilir
   contact: {
     email: "egearda@outlook.com",
     phone: "+90 552 348 74 98",
@@ -48,7 +47,6 @@ window.SITE = {
   ],
 
   skills: [
-    { group: "Cybersecurity", items: ["Nmap", "Network enumeration", "Penetration testing process", "Metasploit", "Footprinting", "Linux", "TCP/IP & OSI", "DNS"] },
     { group: "Simulation & Analysis", items: ["MATLAB", "Simulink", "LTspice", "Proteus", "KiCad"] },
     { group: "Programming", items: ["Python", "C++", "C#", "Java"] },
     { group: "AI & Automation", items: ["AI-assisted workflows", "Prompt engineering", "Data analysis"] },
@@ -82,7 +80,6 @@ window.SITE = {
 
   // Hack The Box Academy transcript (07-10-2026)
   htb: {
-    profile: "#2686223",
     stats: ["Targets compromised: 24", "Ranking: Top 20%"],
     modules: [
       { name: "Network Enumeration with Nmap", tag: "Offensive", progress: 100 },
