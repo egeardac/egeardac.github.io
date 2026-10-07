@@ -59,6 +59,24 @@ window.SITE = {
   // youtube: video ID'si, ör. https://www.youtube.com/watch?v=dQw4w9WgXcQ → "dQw4w9WgXcQ"
   projects: [
     {
+      title: "Threat Intelligence Aggregator API",
+      date: "2026",
+      description: "An API-based threat intelligence project that brings multiple threat analysis services together behind a single, unified API. Queries for indicators such as IPs, domains, URLs, and file hashes are sent to each service, and the results are normalized into one consolidated threat report.",
+      tags: ["Threat Intelligence", "REST API", "Python", "Cybersecurity"],
+      images: ["assets/img/projects/threat-intel.svg"],
+      youtube: "",
+      link: ""
+    },
+    {
+      title: "AI-Assisted Authorized Pentest Tool",
+      date: "2026",
+      description: "An AI tool that uses large language model APIs to support authorized penetration tests: it works only on in-scope targets, plans reconnaissance and enumeration steps, triages findings, and generates a structured report.",
+      tags: ["AI", "LLM APIs", "Penetration Testing", "Automation"],
+      images: ["assets/img/projects/ai-pentest.svg"],
+      youtube: "",
+      link: ""
+    },
+    {
       title: "Li-Fi PLC Transmitter & Receiver",
       date: "2026",
       description: "Visible-light communication (Li-Fi) link between PLCs: the transmitter modulates an LED to send PLC data, and a photodiode receiver demodulates the light signal and feeds it back to a PLC input. Covers modulation, signal conditioning, and noise handling in an industrial-control context.",
