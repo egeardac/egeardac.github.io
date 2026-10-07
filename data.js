@@ -3,7 +3,6 @@ window.SITE = {
   name: "Ege Arda Çörekci",
   title: "Electrical & Electronics Engineering Student",
   photo: "assets/img/profile.jpg", // Fotoğrafını bu isimle koy; yoksa baş harfler gösterilir
-  cv: "assets/cv/Ege_Arda_Corekci_CV.pdf",
   contact: {
     email: "egearda@outlook.com",
     phone: "+90 552 348 74 98",
@@ -21,9 +20,6 @@ window.SITE = {
       date: "Oct 2023 – Present",
       location: "İzmir, Turkey",
       bullets: [
-        "Junior year, English-medium instruction",
-        "50% Merit-Based Scholarship Recipient",
-        "GPA: 2.82 / 4.00",
         "Coursework: Signals and Systems, Electromagnetic Theory, Digital Communications, Circuit Analysis"
       ]
     }
@@ -38,7 +34,7 @@ window.SITE = {
       bullets: ["Completed a cybersecurity internship within the company's IT department, gaining hands-on exposure to corporate information security practices."]
     },
     {
-      role: "Digital Media Expert",
+      role: "Digital Media",
       org: "Xoxo The Mag - Co Production",
       date: "Sep 2021 – Jul 2023",
       location: "İstanbul, Turkey",
@@ -48,13 +44,6 @@ window.SITE = {
         "Created visual content and marketing materials with Adobe Photoshop.",
         "Built structured digital archiving systems for visual asset management."
       ]
-    },
-    {
-      role: "Volunteer, Kitchen Operations",
-      org: "Turk Fatih Tutak (Michelin-Starred Fine Dining)",
-      date: "Sep 2021 – Jan 2022",
-      location: "İstanbul, Turkey",
-      bullets: ["Supported culinary operations under world-class chefs in a high-pressure fine dining environment."]
     }
   ],
 

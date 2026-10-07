@@ -1,2 +1,7 @@
 .claude/
 cv.html.bak
+
+# CV files: kept locally, not published
+*.pdf
+cv.html
+assets/cv/

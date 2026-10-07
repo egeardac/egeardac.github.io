@@ -14,8 +14,7 @@ img.onload = () => $("avatar").replaceChildren(img);
 img.onerror = () => ($("avatar").textContent = initials);
 img.src = d.photo;
 $("actions").innerHTML = `
-  <a class="btn primary" href="${d.cv}" download>Download CV</a>
-  <a class="btn" href="${d.contact.github}" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn primary" href="${d.contact.github}" target="_blank" rel="noopener">GitHub</a>
   <a class="btn" href="${d.contact.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`;
 
 // Timeline cards
