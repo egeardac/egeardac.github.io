@@ -101,7 +101,7 @@ window.SITE = {
   },
 
   certifications: [
-    "HTB Certified Penetration Testing Specialist (HTB CPTS) – Hack The Box, In Progress",
+    "HTB Certified Penetration Testing Specialist (HTB CPTS) – Hack The Box",
     "Core MATLAB Skills (Learning Path) – MathWorks, 2026",
     "Core Signal Processing Techniques in MATLAB – MathWorks, 2026",
     "Simulink Fundamentals – MathWorks, 2026",
