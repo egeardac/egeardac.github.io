@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>egeardac · Projeler</title>
-<meta name="description" content="Elektrik-elektronik, yazılım ve oyun geliştirme projeleri.">
+<title>Ege Arda Çörekci</title>
+<meta name="description" content="Ege Arda Çörekci — projeler ve sertifikalar.">
 <style>
   :root{
     --bg:#f6f5f1; --surface:#ffffff; --ink:#1b1b1f; --muted:#62626b; --line:#e3e1d8; --accent:#b4540a;
@@ -21,7 +21,11 @@
   .lead{color:var(--muted);max-width:56ch;margin:0 0 40px}
   .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px}
-  .card h2{font-size:1.1rem;margin:0}
+  .card h3{font-size:1.1rem;margin:0}
+  .sec{font-size:1.4rem;margin:40px 0 16px;letter-spacing:-.01em}
+  .certs{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .certs li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
+  .certs span{color:var(--muted);font-size:.9rem}
   .card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
   .tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
   .tags li{font-size:.75rem;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--muted)}
@@ -34,37 +38,50 @@
 </head>
 <body>
 <main>
-  <h1>Projeler</h1>
-  <p class="lead">Telekomünikasyon, sinyal işleme, mobil uygulama ve oyun geliştirme alanlarında yaptığım denemeler ve prototipler.</p>
+  <header>
+    <h1>Ege Arda Çörekci</h1>
+    <p class="lead">Elektrik-elektronik mühendisliği. Haberleşme sistemleri, yazılım ve güvenlik üzerine projeler.</p>
+  </header>
 
-  <section class="grid" aria-label="Proje listesi">
-    <article class="card">
-      <h2>Yaşar Öğrenci Portalı</h2>
-      <p>Üniversite öğrenci portalı için arayüz prototipi: kademeli ders kaydı, canlı haftalık program, çakışma kontrolü ve mezuniyet yolu. 2026–2027 Güz dönemi ders verisiyle çalışır.</p>
-      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li></ul>
-      <a class="btn" href="yasar-ogrenci-portali/">Demoyu aç →</a>
-    </article>
+  <section aria-labelledby="projeler">
+    <h2 class="sec" id="projeler">Projeler</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Li-Fi + PLC Çok Yönlü Haberleşme</h3>
+        <p>Işıkla haberleşme (Li-Fi) ile elektrik hattı üzerinden haberleşmeyi (PLC) birleştiren proje. İki teknoloji birbirleriyle düzgün şekilde iletişim kurar ve veri birden fazla yönde akar.</p>
+        <ul class="tags"><li>Li-Fi</li><li>PLC</li><li>Multi-way</li></ul>
+      </article>
 
-    <article class="card">
-      <h2>Streak</h2>
-      <p>Gün bazlı seri takibi yapan Android uygulaması.</p>
-      <ul class="tags"><li>Kotlin</li><li>Android</li></ul>
-      <span class="soon">Yakında</span>
-    </article>
+      <article class="card">
+        <h3>End-to-End Telekomünikasyon Sistemi</h3>
+        <p>Verinin göndericiden alıcıya kadar tüm zincirini kapsayan telekomünikasyon sistemi: verici, kanal ve alıcı tek bir bütün olarak tasarlandı.</p>
+        <ul class="tags"><li>Telekomünikasyon</li><li>Uçtan uca</li></ul>
+      </article>
 
-    <article class="card">
-      <h2>2D Shooter</h2>
-      <p>Godot ile geliştirilen 2D nişancı oyunu prototipi.</p>
-      <ul class="tags"><li>Godot</li><li>GDScript</li></ul>
-      <span class="soon">Yakında</span>
-    </article>
+      <article class="card">
+        <h3>VFX Test Field</h3>
+        <p>Görsel efektlerin denendiği ve test edildiği bir proje. Efektler burada denenip beğenilenler asıl işlere taşınır.</p>
+        <ul class="tags"><li>Unity</li><li>VFX</li></ul>
+      </article>
 
-    <article class="card">
-      <h2>VFX Test Field</h2>
-      <p>Unity'de görsel efekt denemeleri için test alanı.</p>
-      <ul class="tags"><li>Unity</li><li>C#</li><li>VFX Graph</li></ul>
-      <span class="soon">Yakında</span>
-    </article>
+      <article class="card">
+        <h3>Uyarlanabilir Web Hata Düzeltici Yapay Zekâ</h3>
+        <p>Web sitelerindeki hataları bulup düzelten, siteye göre kendini uyarlayan yapay zekâ. Sorunu tespit eder, çözüm önerir ve onaylanan düzeltmeyi uygular.</p>
+        <ul class="tags"><li>Yapay zekâ</li><li>Web</li><li>Otomatik düzeltme</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="sertifikalar">
+    <h2 class="sec" id="sertifikalar">Sertifikalar</h2>
+    <ul class="certs">
+      <li><strong>HTB CPTS</strong><span>Hack The Box · Certified Penetration Testing Specialist</span></li>
+      <li><strong>Claude Certified Architect</strong><span>Anthropic</span></li>
+      <li><strong>Core MATLAB Skills</strong><span>MathWorks</span></li>
+      <li><strong>Core Signal Processing Techniques in MATLAB</strong><span>MathWorks</span></li>
+      <li><strong>Simulink Fundamentals</strong><span>MathWorks</span></li>
+      <li><strong>Power Systems Simulation Onramp</strong><span>MathWorks</span></li>
+    </ul>
   </section>
 
   <footer>© <span id="y"></span> · <a href="https://github.com/egeardac">GitHub</a></footer>
