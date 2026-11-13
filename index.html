@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>egeardac · Projeler</title>
+<meta name="description" content="Elektrik-elektronik, yazılım ve oyun geliştirme projeleri.">
+<style>
+  :root{
+    --bg:#f6f5f1; --surface:#ffffff; --ink:#1b1b1f; --muted:#62626b; --line:#e3e1d8; --accent:#b4540a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121214; --surface:#1b1b1f; --ink:#ececee; --muted:#9a9aa5; --line:#2c2c33; --accent:#f0a05a;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:880px;margin:0 auto;padding:56px 16px 72px}
+  h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}
+  .lead{color:var(--muted);max-width:56ch;margin:0 0 40px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px}
+  .card h2{font-size:1.1rem;margin:0}
+  .card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+  .tags li{font-size:.75rem;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--muted)}
+  a.btn{align-self:flex-start;color:var(--accent);font-weight:600;text-decoration:none}
+  a.btn:hover,a.btn:focus-visible{text-decoration:underline}
+  .soon{align-self:flex-start;font-size:.8rem;color:var(--muted)}
+  footer{margin-top:48px;color:var(--muted);font-size:.85rem}
+  footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <h1>Projeler</h1>
+  <p class="lead">Telekomünikasyon, sinyal işleme, mobil uygulama ve oyun geliştirme alanlarında yaptığım denemeler ve prototipler.</p>
+
+  <section class="grid" aria-label="Proje listesi">
+    <article class="card">
+      <h2>Yaşar Öğrenci Portalı</h2>
+      <p>Üniversite öğrenci portalı için arayüz prototipi: kademeli ders kaydı, canlı haftalık program, çakışma kontrolü ve mezuniyet yolu. 2026–2027 Güz dönemi ders verisiyle çalışır.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li></ul>
+      <a class="btn" href="yasar-ogrenci-portali/">Demoyu aç →</a>
+    </article>
+
+    <article class="card">
+      <h2>Streak</h2>
+      <p>Gün bazlı seri takibi yapan Android uygulaması.</p>
+      <ul class="tags"><li>Kotlin</li><li>Android</li></ul>
+      <span class="soon">Yakında</span>
+    </article>
+
+    <article class="card">
+      <h2>2D Shooter</h2>
+      <p>Godot ile geliştirilen 2D nişancı oyunu prototipi.</p>
+      <ul class="tags"><li>Godot</li><li>GDScript</li></ul>
+      <span class="soon">Yakında</span>
+    </article>
+
+    <article class="card">
+      <h2>VFX Test Field</h2>
+      <p>Unity'de görsel efekt denemeleri için test alanı.</p>
+      <ul class="tags"><li>Unity</li><li>C#</li><li>VFX Graph</li></ul>
+      <span class="soon">Yakında</span>
+    </article>
+  </section>
+
+  <footer>© <span id="y"></span> · <a href="https://github.com/egeardac">GitHub</a></footer>
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
